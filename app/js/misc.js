@@ -170,25 +170,38 @@ function updateDifficulty() {
  */
 
 
+
 function setControls() {
+	keyUp = game.input.keyboard.addKey(Phaser.Keyboard.UP),
+	keyDown = game.input.keyboard.addKey(Phaser.Keyboard.DOWN);
+	
+	function analyseKeys() {
+		sounds.stop("motor");
+		player.rearBubbles.on = false;
+		
+		if (keyUp.isDown || keyDown.isDown) {
+			player.move = keyUp.isDown ? "up" : "down";
+			sounds.play("motor", effectsVolume, 0.25, true);
+			player.rearBubbles.start(rearBubblesParam.emit.explode, rearBubblesParam.emit.lifespan, rearBubblesParam.emit.interval, rearBubblesParam.emit.nbr);
+		} else {
+			player.move = "none";
+			player.submarine.body.velocity.y = 0;
+		}
+		
+	}
+	
 	function movePlayer(direction) {
 		player.move = direction;
 		sounds.play("motor", effectsVolume, 0.25, true);
+		console.log("play");
 		player.rearBubbles.start(rearBubblesParam.emit.explode, rearBubblesParam.emit.lifespan, rearBubblesParam.emit.interval, rearBubblesParam.emit.nbr);
 	}
 	
 	function stopPlayer() {
-		if (keyUp.isUp && keyDown.isUp) {
-			player.move = "none";
-			player.submarine.body.velocity.y = 0;
-
-			sounds.stop("motor");
-
-			player.rearBubbles.on = false;	
-		} else {
-			console.log(keyUp);
-			console.log(keyDown);
-		}
+		sounds.stop("motor");
+		player.rearBubbles.on = false;
+		player.move = "none";
+		player.submarine.body.velocity.y = 0;
 	}
 		
 
@@ -202,15 +215,15 @@ function setControls() {
 		}
 	}, this);
 
-	var keyUp = game.input.keyboard.addKey(Phaser.Keyboard.UP);
-	keyUp.isUp = true;
-    keyUp.onDown.add(function() {movePlayer("up");}, this, "up");
-	keyUp.onUp.add(stopPlayer, this, "up");
 	
-    var keyDown = game.input.keyboard.addKey(Phaser.Keyboard.DOWN);
+	keyUp.isUp = true;
+    keyUp.onDown.add(analyseKeys, this, "up");
+	keyUp.onUp.add(analyseKeys, this, "up");
+	
+    
 	keyDown.isUp = true;
-    keyDown.onDown.add(function() {movePlayer("down");}, this, "down");
-	keyDown.onUp.add(stopPlayer, this, "up");
+    keyDown.onDown.add(analyseKeys, this, "down");
+	keyDown.onUp.add(analyseKeys, this, "up");
 	
 	game.input.onUp.add(function (e) {
 		if (gameState === 3) {
