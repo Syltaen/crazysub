@@ -1,6 +1,6 @@
 # CrazySub
 --------
-## A HTML5 game
+#### A HTML5 game
 
  ![CrazySub's logo](http://crazysub.dekoh.eu/images/heade.png)
 
@@ -25,4 +25,4 @@
 
 
 
-*Note that the `app` folder is not meant to be a standalone, the code and its assets should be in the `desktop` and `mobile` folers of the website*
+*Please note that the `app` folder is not meant to be a standalone. The code and its assets should be in the `desktop` and `mobile` website's folders*
