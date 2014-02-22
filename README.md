@@ -1,6 +1,6 @@
 # CrazySub
 --------
-#### A HTML5 game
+#### A HTML5 game made in two weeks for the #iLab04, [ESIAJ](http://www.infographie-sup.be/), Belgium
 
  ![CrazySub's logo](http://crazysub.dekoh.eu/images/heade.png)
 
