@@ -25,4 +25,9 @@
 
 
 
-*Please note that the `app` folder is not meant to be a standalone. The code and its assets should be in the `desktop` and `mobile` website's folders*
+*Please note that the content of the `app` folder should be in the `mobile` website's folder.*
+*Furthermore, there is no `backend` floder as asked bescause we didn't use database or real server-side component*
+*However, the game should be launched from a online/local sever as it loads data asynchronously*
+
+
+ ![Game simualtion within a smartphone](http://crazysub.stanleylambot.be/images/smrtp.png)
