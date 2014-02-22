@@ -10,18 +10,18 @@
 
 ### Related Links
 
-[The game's website] (http://crazysub.dekoh.eu/)
-[Mobile version] (http://crazysub.dekoh.eu/mobile/)
-[Desktop version] (http://crazysub.dekoh.eu/desktop/)
-[Presentation video] (http://vimeo.com/87213094)
+* [The game's website] (http://crazysub.dekoh.eu/)
+* [Mobile version] (http://crazysub.dekoh.eu/mobile/)
+* [Desktop version] (http://crazysub.dekoh.eu/desktop/)
+* [Presentation video] (http://vimeo.com/87213094)
 
 
 
 ### Made by
 
-[Denis Kohlman] (https://twitter.com/dedesh14)
-[Jerome Renders] (https://twitter.com/JeromeRenders)
-[Stanley Lambot] (https://twitter.com/Syltaen)
+* [Denis Kohlman] (https://twitter.com/dedesh14)
+* [Jerome Renders] (https://twitter.com/JeromeRenders)
+* [Stanley Lambot] (https://twitter.com/Syltaen)
 
 
 
