@@ -23,15 +23,13 @@
 * [Jerome Renders] (https://twitter.com/JeromeRenders)
 * [Stanley Lambot] (https://twitter.com/Syltaen)
 
-
-
-
-
+ 
+ 
+ 
 
 *Please note that the content of the `app` folder should be in the `mobile` website's folder.*
 
 *Furthermore, there is no `backend` floder as asked bescause we didn't use database or real server-side component.*
-
 *However, the game should be launched from a online/local sever as it loads assets asynchronously*
 
 
