@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'Razing';
+    src: url('Razing.ttf');    
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+/*
+	background: rgba(51,165,199,0.79);
+	background: linear-gradient(#005272 0%, #004865 100%);
+	background: -webkit-linear-gradient(#005272 0%, #004865 100%);
+	background: -moz-linear-gradient(#005272 0%, #004865 100%);
+	background: -o-linear-gradient(#005272 0%, #004865 100%);
+	background: -ms-linear-gradient(#005272 0%, #004865 100%);
+*/
+	
+	
+	background: url(../images/bg_desktopTryIt.jpg) center center fixed;
+	background-size: cover;
+	
+	
+	color: #fff;
+}
+
+header h1 a {
+	display: block;
+	text-align: center;
+	font-size: 3em;
+	color: #fff;
+	text-indent: -9999px;
+	height: 415px;
+	width: 960px;
+	margin: 0 auto;
+	background: url(../images/heade.png) no-repeat center top;
+	background-size: 800px;
+}
+
+#contentgame{
+	width: 540px;
+	height: 380px;
+	margin: 0 auto;
+	background: url(../images/cadreGame.png) no-repeat;
+	padding: 30px;
+}
+
+#game_canvas {
+	width: 480px;
+	height: 320px;
+	background: black;
+}
+
+#htp{
+	width: 620px;
+	margin: 0 auto;
+}
+
+#htp h1 {
+	font-family: "Razing", sans-serif;
+}
+
+.col{
+	width: 45%;
+	padding-right: 10%;
+	float: left;
+}
+
+.col:last-child{
+	padding: 0;
+}

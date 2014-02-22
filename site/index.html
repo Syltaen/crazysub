@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>CrazySub</title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="css/libs/animate.css">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" /> 
+		<link rel="stylesheet" type="text/css" href="css/style.css" /> 
+
+		<link rel="shortcut icon" type="image/png" href="favicon.png" />
+		<link rel="icon" type="image/png" href="favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,800italic,400,300,700' rel='stylesheet' type='text/css'>
+
+	</head>
+	<body>
+		<header>
+			<div id="nuages">
+			</div>
+			<div class="inner">
+				<h1>CrazySub</h1>
+			</div>
+			<div id="bateau">
+				<div id="grue"></div>
+				<div class="bat"></div>
+			</div>
+			<div class="vaguemove"><div id="vague"></div></div>
+			<div id="eauhead"></div>
+			<div id="ecum" class="movetoleft"></div>
+
+		</header>
+		<div id="sub">
+			<div class="bulle"></div>
+			<div class="bulle"></div>
+			<div class="bulle"></div>
+			<div class="bulle"></div>
+			<div class="sub wb"></div>
+		</div>
+
+		<div id="container">
+			<div id="content">
+				<div class="bloc">
+					<div class="col  section--blue wow fadeInDown">
+						<h1><!-- À propos -->About the game</h1>
+						<p><!-- CrazySub est un jeux de plateforme qui nous plonge dans un univers sous marin des plus "crazy". Le but du jeux est d'explorer le plus de fonds marins possible. -->CrazySub is a platform game that takes us into a crazy underwater world. The goal of the game is to explore the best possible seabed while avoiding different obstacles.</p><div id="getIt">
+						<img src="images/gameIcon.png" alt="game icon" width="180" height="180">
+						<a href="mobile/">Get it on smartphone</a>
+						<a href="desktop/">Try it on desktop</a>							
+						</div>
+						<div class="shark"></div>
+					</div>
+					<div class="col smarthphone section--blue wow fadeInUp"  data-wow-offset="300">
+						<img src="images/smrtp.png"/>
+					</div>
+				</div>
+				<div class="bloc">
+					<div class="col smarthphone section--blue wow fadeInLeft">			
+						<iframe src="//player.vimeo.com/video/87213094" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					</div>
+					<div class="col section--blue wow fadeInRight">
+						<h1><!-- Teaser -->Take a look</h1>
+						<p><!-- <strong>Plongez</strong> dès maintenant dans l'aventure CrazySub et évitez tous les obstacles des fonds marins. Irez-vous plus loin que vos amis? -->Dive into the CrazySub adventure now, avoid all obstacles and go as far as possible. Will you go further than your friends ?</p><div class="baril"></div>
+					</div>
+				</div>
+				<div class="bloc">
+
+					<div class="col section--blue wow fadeInDown">
+						<h1><!-- Crédits -->Behind the scene</h1>
+						<p><!-- Le projet CrazySub a été créé dans le cadre du workshop iLab des 3eme année de webdesign a la haute école Albert Jaquard de Namur. Ce projet a été réalisé par l'équipe Machintruc qui est composé de <a href="http://www.stanleylambot.be" target="_blank">Stanley Lambot</a>, <a href="http://www.dekoh.eu" target="_blank">Denis Kohlman</a> et <a href="http://www.jeromerenders.be" target="_blank">Jérome Renders</a> -->The CrazySub project was created in the #iLab workshop during the 3rd year of high school "Albert Jaquard" in Namur, BE. The "Machin Truc" team is composed of <a href="http://www.stanleylambot.be" target="_blank">Stanley Lambot</a>, <a href="http://www.dekoh.eu" target="_blank">Denis Kohlman</a> and <a href="http://www.jeromerenders.be" target="_blank">Jérome Renders</a> .</p>
+					</div>
+					<div class="col smarthphone">
+						<div class="mine"></div><div class="mine"></div>
+					</div>
+				</div>
+				<div class="bloc">
+					<div class="col smarthphone">
+						<div class="life"></div><div class="missile"></div>
+					</div>
+					<div class="col section--blue wow fadeInUp">
+						<h1><!-- Plan d'avenir -->What's next?</h1>
+						<p><!-- CrazySub promet de gagner plein de labcoins grâce aux investisseurs méritant. -->In the future we would like to improve and add some features. For instance, we had the idea to add boss, coins, more enemies and submarines or different upgrades for your submarines. And, why not, adapt the game for the iPad users!
+
+							Stay tuned for some game update in the few weeks! :D</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div id="fond"></div>
+		</footer>
+		<nav>
+			<ul id="weather">
+				<li id="auto" class="active"><span>Auto</span></li>
+				<li id="clickday"><span>Day</span></li>
+				<li id="clickcrep"><span>Crepuscule</span></li>
+				<li id="clicknight"><span>Night</span></li>
+				<li id="clickaube"><span>Aube</span></li>
+			</ul>
+			<ul id="subs">
+				<li id="BasicYellowSub"><span>BasicYellowSub</span></li>
+				<li id="LightingStrike" class="active"><span>LightingStrike</span></li>
+				<li id="redFlames"><span>redFlames</span></li>
+				<li id="submarine_04_MT-19214"><span>submarine_04_MT-19214</span></li>
+			</ul>
+		</nav>
+		<script src="js/wow.js"></script>
+		<script>
+			wow = new WOW(
+				{
+					animateClass: 'animated',
+					offset:       100
+				}
+			);
+			wow.init();
+		</script>
+		<script type="text/javascript" src="js/modernizr.js"></script>
+
+	</body>
+</html>
