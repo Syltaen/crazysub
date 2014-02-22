@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+		<title>CrazySub - Mobile Version</title>
+		<meta charset="UTF-8" />
+		<link rel="shortcut icon" type="image/png" href="../favicon.png" />
+  		<link rel="icon" type="image/png" href="../favicon.png" />
+
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no"/>
+		<meta name=apple-mobile-web-app-capable content=yes>
+		<meta name=apple-mobile-web-app-status-bar-style content=black>
+		<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+		<link rel="apple-touch-startup-image" href="splashScreen.jpg">
+		
+  		<script type="text/javascript" src="js/phaser.min.js"></script>
+		<script type="text/javascript" src="js/parameters.js"></script>
+		<script type="text/jscript" src="js/misc.js"></script>
+		<script type="text/jscript" src="js/pools.js"></script>
+		<script type="text/jscript" src="js/constructor.js"></script>
+		<script type="text/jscript" src="js/actions.js"></script>
+		<script type="text/jscript" src="js/init.js"></script>
+  		
+  		<style>
+  			@font-face {
+				font-family: 'Razing';
+				src: url('assets/fonts/Razing.ttf');    
+				font-weight: normal;
+				font-style: normal;
+			}
+  			body, html, #game_canvas {
+  				width: 100%;
+  				height: 100%;
+  				margin: 0;
+  				padding: 0;
+  				min-height: 320px;
+  			}
+  			
+  		
+  		</style>
+	</head>
+	<body  onload="init();">
+		
+
+		
+		<div id="game_canvas">
+
+		</div>
+		<script type="text/javascript">(function(e,t,n){if(n in t&&t[n]){var r,i=e.location,s=/^(a|html)$/i;e.addEventListener("click",function(e){r=e.target;while(!s.test(r.nodeName)){r=r.parentNode}if("href"in r&&(r.href.indexOf("http")||~r.href.indexOf(i.host))){e.preventDefault();i.href=r.href}},false)}})(document,window.navigator,"standalone")</script>
+	</body>
+</html>
