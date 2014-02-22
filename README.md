@@ -1,5 +1,5 @@
 # CrazySub
-========
+--------
 ## A HTML5 game
 
  ![CrazySub's logo](http://crazysub.dekoh.eu/images/heade.png)
